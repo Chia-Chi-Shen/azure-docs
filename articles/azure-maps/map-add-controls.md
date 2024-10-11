@@ -20,7 +20,7 @@ A zoom control adds buttons for zooming the map in and out. The following code s
 ```javascript
 //Construct a zoom control and add it to the map.
 map.controls.add(new atlas.control.ZoomControl(), {
-    position: 'bottom-right'
+  position: "bottom-right",
 });
 ```
 
@@ -36,7 +36,7 @@ A pitch control adds buttons for tilting the pitch to map relative to the horizo
 ```javascript
 //Construct a pitch control and add it to the map.
 map.controls.add(new atlas.control.PitchControl(), {
-    position: 'top-right'
+  position: "top-right",
 });
 ```
 
@@ -52,7 +52,7 @@ A compass control adds a button for rotating the map. The following code sample 
 ```javascript
 //Construct a compass control and add it to the map.
 map.controls.add(new atlas.control.CompassControl(), {
-    position: 'bottom-left'
+  position: "bottom-left",
 });
 ```
 
@@ -61,19 +61,45 @@ map.controls.add(new atlas.control.CompassControl(), {
 > [!VIDEO //codepen.io/azuremaps/embed/GBEoRb/?height=500&theme-id=0&default-tab=js,result&embed-version=2&editable=true]
 ---------------------------------------------------------->
 
+## Add scale control
+
+A scale control adds a scale bar to the map. The following code sample creates an instance of the [ScaleControl] class and adds it to the bottom-left corner of the map.
+
+```javascript
+//Construct a scale control and add it to the map.
+map.controls.add(new atlas.control.ScaleControl(), {
+  position: "bottom-left",
+});
+```
+
+## Add fullscreen control
+
+A fullscreen control adds a button to toggle the map or specified HTML element between fullscreen and normal view. The following code sample creates an instance of the [FullscreenControl] class and adds it to the top-right corner of the map.
+
+```javascript
+//Construct a fullscreen control and add it to the map.
+map.controls.add(new atlas.control.FullscreenControl(), {
+  position: "top-right",
+});
+```
+
 ## A Map with all controls
 
 Multiple controls can be put into an array and added to the map all at once and positioned in the same area of the map to simplify development. The following code snippet adds the standard navigation controls to the map using this approach.
 
 ```javascript
-map.controls.add([
+map.controls.add(
+  [
     new atlas.control.ZoomControl(),
     new atlas.control.CompassControl(),
     new atlas.control.PitchControl(),
-    new atlas.control.StyleControl()
-], {
-    position: "top-right"
-});
+    new atlas.control.StyleControl(),
+    new atlas.control.ScaleControl(),
+  ],
+  {
+    position: "top-right",
+  }
+);
 ```
 
 The following image shows a map with the zoom, compass, pitch, and style picker controls in the top-right corner of the map. Notice how they automatically stack. The order of the control objects in the script dictates the order in which they appear on the map. To change the order of the controls on the map, you can change their order in the array.
@@ -104,34 +130,25 @@ If you want to create customized navigation controls, create a class that extend
 
 Learn more about the classes and methods used in this article:
 
-> [!div class="nextstepaction"]
-> [CompassControl]
+> [!div class="nextstepaction"] > [CompassControl]
 
-> [!div class="nextstepaction"]
-> [PitchControl]
+> [!div class="nextstepaction"] > [PitchControl]
 
-> [!div class="nextstepaction"]
-> [StyleControl]
+> [!div class="nextstepaction"] > [StyleControl]
 
-> [!div class="nextstepaction"]
-> [ZoomControl]
+> [!div class="nextstepaction"] > [ZoomControl]
 
 See the following articles for full code:
 
-> [!div class="nextstepaction"]
-> [Add a pin]
+> [!div class="nextstepaction"] > [Add a pin]
 
-> [!div class="nextstepaction"]
-> [Add a popup]
+> [!div class="nextstepaction"] > [Add a popup]
 
-> [!div class="nextstepaction"]
-> [Add a line layer]
+> [!div class="nextstepaction"] > [Add a line layer]
 
-> [!div class="nextstepaction"]
-> [Add a polygon layer]
+> [!div class="nextstepaction"] > [Add a polygon layer]
 
-> [!div class="nextstepaction"]
-> [Add a bubble layer]
+> [!div class="nextstepaction"] > [Add a bubble layer]
 
 [style picker]: choose-map-style.md
 [ZoomControl]: /javascript/api/azure-maps-control/atlas.control.zoomcontrol
