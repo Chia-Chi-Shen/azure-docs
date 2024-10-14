@@ -91,9 +91,10 @@ Multiple controls can be put into an array and added to the map all at once and 
 map.controls.add(
   [
     new atlas.control.ZoomControl(),
-    new atlas.control.CompassControl(),
     new atlas.control.PitchControl(),
+    new atlas.control.CompassControl(),
     new atlas.control.StyleControl(),
+    new atlas.control.FullscreenControl(),
     new atlas.control.ScaleControl(),
   ],
   {
@@ -138,6 +139,10 @@ Learn more about the classes and methods used in this article:
 
 > [!div class="nextstepaction"] > [ZoomControl]
 
+> [!div class="nextstepaction"] > [ScaleControl]
+
+> [!div class="nextstepaction"] > [FullscreenControl]
+
 See the following articles for full code:
 
 > [!div class="nextstepaction"] > [Add a pin]
@@ -155,6 +160,8 @@ See the following articles for full code:
 [PitchControl]: /javascript/api/azure-maps-control/atlas.control.pitchcontrol
 [CompassControl]: /javascript/api/azure-maps-control/atlas.control.compasscontrol
 [StyleControl]: /javascript/api/azure-maps-control/atlas.control.stylecontrol
+[ScaleControl]: /javascript/api/azure-maps-control/atlas.control.scalecontrol
+[FullscreenControl]: /javascript/api/azure-maps-control/atlas.control.fullscreencontrol
 [Navigation Control Options]: https://samples.azuremaps.com/controls/map-navigation-control-options
 [Navigation Control Options source code]: https://github.com/Azure-Samples/AzureMapsCodeSamples/blob/main/Samples/Controls/Map%20Navigation%20Control%20Options/Map%20Navigation%20Control%20Options.html
 [choose a map style]: choose-map-style.md
