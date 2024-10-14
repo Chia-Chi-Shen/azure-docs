@@ -103,9 +103,9 @@ map.controls.add(
 );
 ```
 
-The following image shows a map with the zoom, compass, pitch, and style picker controls in the top-right corner of the map. Notice how they automatically stack. The order of the control objects in the script dictates the order in which they appear on the map. To change the order of the controls on the map, you can change their order in the array.
+The following image shows a map with the zoom, pitch, compass, style, fullscreen and scale controls in the top-right corner of the map. Notice how they automatically stack. The order of the control objects in the script dictates the order in which they appear on the map. To change the order of the controls on the map, you can change their order in the array.
 
-:::image type="content" source="./media/map-add-controls/map-with-all-controls.png" lightbox="./media/map-add-controls/map-with-all-controls.png" alt-text="Screenshot showing a map displaying zoom, compass, pitch and style controls.":::
+:::image type="content" source="./media/map-add-controls/map-with-all-controls.png" lightbox="./media/map-add-controls/map-with-all-controls.png" alt-text="Screenshot showing a map displaying zoom, pitch, compass, style, fullscreen and scale controls.":::
 
 <!----------------------------------------------------------
 <br/>
@@ -131,13 +131,13 @@ If you want to create customized navigation controls, create a class that extend
 
 Learn more about the classes and methods used in this article:
 
+> [!div class="nextstepaction"] > [ZoomControl]
+
 > [!div class="nextstepaction"] > [CompassControl]
 
 > [!div class="nextstepaction"] > [PitchControl]
 
 > [!div class="nextstepaction"] > [StyleControl]
-
-> [!div class="nextstepaction"] > [ZoomControl]
 
 > [!div class="nextstepaction"] > [ScaleControl]
 
